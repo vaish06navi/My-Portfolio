@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website - Vaishnavi</title>
+    <link rel="stylesheet" href = "style.css">
+    <script src="https://kit.fontawesome.com/291869b459.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id = "header">
+        <div class ="container">
+            <nav>
+                <img src="images/logo1.jpeg" class="logo">
+                <ul id= "sidemenu">
+                    <li><a href ="#header"> Home</a></li>
+                    <li><a href ="#about"> About</a></li>
+                    <li><a href ="#Certifications"> Certifications</a></li>
+                    <li><a href = "#portfolio"> Portfolio</a></li>
+                    <li><a href = "#Coding-Profiles"> Coding Profiles</a></li>
+                    <li><a href = "#contact"> Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                <ul>
+                    <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class = "header-text">
+                <p>Undergraduate Student</p>
+                <h1> Hi, I'm <span>Sree Vaishnavi</span><br> Karipe !</h1>
+            </div>
+        </div>
+
+    </div>
+<!----------------------------about--------------------------------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.jpeg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Enthusiastic undergraduate student in AI and ML, proficient in Python, R, C, SQL, and Tableau, with expertise in DSA, DBMS, ML, and AI. 
+                    Possesses frontend development skills in HTML, CSS, and JavaScript. A strong communicator and leader, adept at both independent and 
+                    collaborative work, seeking mentorship to further develop analytical skills and contribute effectively.</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+
+
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Languages</span><br>Python, Java, R, C </li>
+                        <li><span>Coursework</span><br>DSA, DBMS, OOPs, Operating Systems, Computer Networks </li>
+                        <li><span>Core-Subjects</span><br>Machine Learning, Artificial Intelligence, Natural Language Processing</li>
+                        <li><span>Data Analysis & Visualizations</span><br>NumPy, Pandas, Tableau, Excel, Matplotlib, Seaborn</li>
+                        <li><span>DataBases</span><br>SQL, MongoDB</li>
+                        <li><span>Web development</span><br>HTML, CSS, JavaScript</li>
+                        <li><span>Tools</span><br>GitHub, VS-Code, PyCharm, MySQL, RStudio's, Colab</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Indian School Of Business </span><br>Digital Operations Intern <a href="https://drive.google.com/drive/folders/1E5YRa_pnfb2CKXgVOq81HX_SCsaao-KF">Certificate</a></li>
+                        <p>- Executed the Digital placement operations at ISB for PGP Class of 2023 successfully.<p>
+                        <p>- Customized & Managed Skynet, Zoom & WhatsApp to communicate with Hiring teams & Students.<p> 
+                        
+                        <li><span>AICTE Idea Labs </span><br>Machine Learning Intern  <a href="https://drive.google.com/drive/folders/1E5YRa_pnfb2CKXgVOq81HX_SCsaao-KF">Certificate</a></li>
+                        <p>- Completed a four-week Internship Programme on Technical Solution and Business Plan preparation for the Idea on WingSpan.</p>
+                        <p>- Developed a machine learning project to create a website for managing the college canteen system and recommending food to newly registered students.</p>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>Chaitanya Bharathi Institute Of Technology</span><br>B.E- Artificial Intelligence & Machine Learning<br>CGPA–9.62/10</li>
+                        <li><span>Sri Sanjeevni Jr College </span><br>TSBIE Intermediate – MPC<br>Percentage –98.2%</li>
+                        <li><span>St Pius X High School</span><br>TSBSE High School<br>CGPA - 10.00</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--------------------------------certfications----------------------------------------->
+<div id="Certifications">
+    <div class="container">
+        <h1 class="sub-title">Certifications</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-laptop-file"></i>
+                <h2>Machine Learning Specialization</h2>
+                <p>Amazon - Machine Learning Course</p>
+                <a href="https://drive.google.com/drive/folders/1DPxuaBZu1bR3RFK8pY0qACDZqgMovaO3">Certificate</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-brain"></i>
+                <h2>AI Foundation & Advance</h2>
+                <p>Hexat.In</p>
+                <a href="https://drive.google.com/drive/folders/1E5YRa_pnfb2CKXgVOq81HX_SCsaao-KF">Certificate</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Data Structures & Algorithms</h2>
+                <p>IIT Madras - NPTEL</p>
+                <a href="https://drive.google.com/drive/folders/1E5YRa_pnfb2CKXgVOq81HX_SCsaao-KF">Certificate</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-dev"></i>
+                <h2>Web Development</h2>
+                <p>Internshala</p>
+                <a href="https://drive.google.com/drive/folders/1E5YRa_pnfb2CKXgVOq81HX_SCsaao-KF">Certificate</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ----------portfolio----=------------------------------------------ -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.jpeg">
+                <div class="layer">
+                    <h3>WINGSPAN - A Canteen Management System</h3>
+                    <p>Directed an in-depth online survey targeting CBIT students, Developed a user-friendly
+                        website and the integration of a canteen recommendation system using ML algorithms.</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.jpeg">
+                <div class="layer">
+                    <h3>WhatsApp Chat Sentiment Analyzer</h3>
+                    <p>Conducted extensive experiments on WhatsApp data, exploring diverse Machine Learning Algorithm &  
+                        Explored various NLP encoding techniques .</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.jpeg">
+                <div class="layer">
+                    <h3>Netflix CustomerAnalysis Dashboard</h3>
+                    <p>Developed an interactive Netflix dashboard in Tableau, highlighting the top 10 genres, binge-watching
+                        trends. Improved user satisfaction by 30% with search functionality for ratings, genres, and descriptions.</p>
+                    <a href="https://github.com/vaish06navi/Netflix-Dashboard"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="https://github.com/vaish06navi?tab=repositories" class="btn">See more</a>
+    </div>
+</div>
+<!-----------------------------------------Coding Prodiles---------------------------------------------->
+<div id ="Coding-Profiles">
+    <div class ="container">
+        <h1 class="sub-title">Coding Profiles </h1>
+        <div class="coding-list">
+            <div>
+                
+                <i class="fa-solid fa-code"></i>
+                <h2>LeetCode</h2>
+                <a href="https://leetcode.com/u/vaish06navi/">Profile Link</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-hackerrank"></i>
+                <h2>Hackerrank</h2>
+                <a href="https://www.hackerrank.com/profile/sreevaishnavika1">Profile Link</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-code-compare"></i>
+                <h2>GeeksForGeeks</h2>
+                <a href="https://www.geeksforgeeks.org/user/sreevaishnavikaripe03/?utm_source=geeksforgeeks&utm_medium=my_profile&utm_campaign=auth_user">Profile Link</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-codepen"></i>
+                <h2>TakeUforward</h2>
+                <a href="https://takeuforward.org/profile/sreevaishnavikaripe03@gmail.com">Profile Link</a>
+            </div>
+            
+        </div>
+    </div>
+
+</div>
+<!-- ----------contact------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i> sreevaishnavikaripe03.com</p>
+                <p><i class="fas fa-phone-square-alt"></i> +91 8074422795</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/sree-vaishnavi-karipe-0a82b9253/"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/vaish06navi?tab=repositories"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <a href="images/Sree Vaishnavi Karipe -Resume.pdf" download class="btn btn2">Download - Resume</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Vaishnavi <i class="fa-solid fa-user-graduate"></i></p>
+    </div>
+</div>
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<script>
+
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxpmkGy67tWqomPDWGSGVCTZzz8RgNhlVcXgSwyOxrB-Bg_e1FLvqK5JScvUF0NitvYEw/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent Successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
